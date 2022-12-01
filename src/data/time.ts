@@ -15,7 +15,7 @@ export function convertTime(t: number, offset: number, skip: number): string {
     }
     // 0 -> 子时; 1 -> 子时一刻
     const num = t * (skip + 1) + offset;
-    const h = Math.round(num / 8);
+    const h = Math.floor(num / 8);
     const k = num % 8;
     return sc(dizhi[h], time[k]);
 }
