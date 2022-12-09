@@ -87,3 +87,7 @@ typings/
 
 # Electron-Forge
 out/
+
+src/css
+src/font
+src/img
