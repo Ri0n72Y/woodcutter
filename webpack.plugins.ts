@@ -5,7 +5,7 @@ import path from 'path';
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const ForkTsCheckerWebpackPlugin: typeof IForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
 
-const assets = ['css'];
+const assets = ['css', 'data'];
 
 export const plugins = [
   new ForkTsCheckerWebpackPlugin({

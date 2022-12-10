@@ -1,8 +1,8 @@
-import ReactDOM from "react-dom";
+import { createRoot } from "react-dom/client";
 import App from "./game/App";
 
 function render() {
-    ReactDOM.render(<App />, document.body);
+    createRoot(document.getElementById('app')).render(<App />);
 }
 
 render();
