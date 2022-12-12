@@ -1,4 +1,4 @@
-import * as I from '../data/models.typed';
+import * as I from './models.typed';
 
 export const defaultCharacterProps: I.ICharacterProps = {
   CON: { name: '根骨', val: 10 },
@@ -18,9 +18,9 @@ export const defaultCharactor: I.ICharacter = {
 }
 
 export const defaultDate: I.IDate = {
-  year: 0,
+  year: 1,
   season: 0,
-  date: 0,
+  date: 1,
 }
 
 export const initialState: I.IGameState = {

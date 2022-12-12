@@ -1,4 +1,4 @@
-import { IGameState } from "../data/models.typed";
+import { IGameState } from "./models.typed";
 
 function PropView({ store }: { store: IGameState }) {
   return (<div className="
