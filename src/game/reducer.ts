@@ -1,4 +1,4 @@
-import * as I from "../data/models.typed";
+import * as I from "./models.typed";
 import { ActionType as T, Action } from "./actions";
 
 export function stateReducer(state: I.IGameState, action: Action) {
