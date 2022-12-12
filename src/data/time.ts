@@ -22,8 +22,12 @@ export function convertTime(t: number, offset: number, skip: number): string {
 
 const sc = (h: string, k: string) => `${h}时${k}刻`;
 
-export function convertDays(d: number, offset?: number): string {
-    return "";
+const DAY_EACH_YEAR = 12;
+export function convertDays(d: number, offset = 0): string {
+    const d1 = (d % DAY_EACH_YEAR + offset) % 10;
+    const d10 = Math.floor((d % DAY_EACH_YEAR + offset) / 10);
+    const y1 = Math.floor(d / DAY_EACH_YEAR) % 10;
+    return `${time[y1]}年${d10 > 0 ? tens[d10 - 1] : ''}${time[d1]}日`;
 }
 
 const dizhi = "子丑寅卯辰巳午未申酉戌亥"; // 地支
